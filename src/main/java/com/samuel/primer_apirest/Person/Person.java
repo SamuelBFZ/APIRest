@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data //genera getters y setter, ademas de toString, hashCode y equals 
 @AllArgsConstructor //crea constructor con todos los parametros
 @NoArgsConstructor //crea constructor sin parametros
-@Entity
+@Entity//crea en la BD
 public class Person {
     @Id //define que el id es un id
     @GeneratedValue //como se genera el valor

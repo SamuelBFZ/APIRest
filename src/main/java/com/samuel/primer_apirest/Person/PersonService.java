@@ -1,5 +1,6 @@
 package com.samuel.primer_apirest.Person;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import lombok.RequiredArgsConstructor;
@@ -24,4 +25,5 @@ public class PersonService{
     public void deletePersonById(Integer id){
         personRepo.deleteById(id);
     }
+
 }
