@@ -16,4 +16,12 @@ public class PersonService{
     public void createPerson(Person person){
         personRepo.save(person); //sirve como create
     }
+
+    public Person findPersonById(Integer id){
+        return personRepo.findById(id).orElse(null);
+    }
+
+    public void deletePersonById(Integer id){
+        personRepo.deleteById(id);
+    }
 }
