@@ -1,5 +1,7 @@
 package com.samuel.primer_apirest.Person;
 
+import org.springframework.context.annotation.Scope;
+
 import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,6 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor //crea constructor con todos los parametros
 @NoArgsConstructor //crea constructor sin parametros
 @Entity//crea en la BD
+//@Scope("singleton")
 public class Person {
     @Id //define que el id es un id
     @GeneratedValue //como se genera el valor
